@@ -3,28 +3,23 @@ board of cells
 cell cellBoard[][]
 int displayBoard[][]
 
-live cells have:
+cell:
 getNeighbors(board): //Checks 8 surrounding neighbors
-x = 
-y = 
-int nextGen(board, numNeighbors) 
-{
-this.x
-this.y
-needs 2 or 2 neighbors to be alive
-else returns false
-}
-
-dead cells have:
-color: black
-getNeighbors(board): //Checks 8 surrounding neighbors
+bool isAlive
 x = 
 y = 
 int nextGen(board, numNeighbors)// will return if cell lives or dies this turn
 {
+if dead:
 this.x
 this.y
 needs 3 neighbors to return true
+else returns false
+
+if alive:
+this.x
+this.y
+needs 2 or 2 neighbors to be alive
 else returns false
 }
 
@@ -35,6 +30,10 @@ main{
 for(y<len)
   for(x<width)
    displayBoard[y][x] = cellBoard[y][x].nextGen(cellBoard)
+
+for()
+   for()
+      PRINT
 
 
 
