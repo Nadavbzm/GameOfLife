@@ -1,6 +1,5 @@
 #include "Tools.h"
 
-
 void Tools::init(Cell grid[GRID_SIZE][GRID_SIZE])
 {
 	for (int i = 0; i < GRID_SIZE; i++)
@@ -22,5 +21,17 @@ void Tools::copyGrid(Cell src[GRID_SIZE][GRID_SIZE], Cell dst[GRID_SIZE][GRID_SI
 		{
 			dst[i][j] = src[i][j];
 		}
+	}
+}
+
+void Tools::printGrid(Cell grid[GRID_SIZE][GRID_SIZE])
+{
+	for (int i = GRID_SIZE-1; i > 0; i--)
+	{
+		for (int j = 0; j < GRID_SIZE; j++)
+		{
+				std::cout << grid[i][j].getLetter();
+		}
+		std::cout << std::endl;
 	}
 }

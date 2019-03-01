@@ -6,6 +6,7 @@ public:
 	int x;
 	int	y;
 	bool isAlive;
+	int numNeighbors;
 	char getLetter();
 	Cell();
 	~Cell();
@@ -13,4 +14,3 @@ public:
 	Cell(int x, int y);
 	char nextGen(Cell grid[GRID_SIZE][GRID_SIZE]);// will return if cell lives or dies this turn
 };
-
